@@ -244,6 +244,7 @@ export default class Calendar extends Component<CalendarProps, CalendarState> {
   }
 
   componentDidMount() {
+    console.log("in forked calendar");
     // monthContainer height is needed in time component
     // to determine the height for the ul in the time component
     // setState here so height is given after final component
