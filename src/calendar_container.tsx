@@ -17,12 +17,7 @@ const CalendarContainer: React.FC<CalendarContainerProps> = function ({
     : `Choose Date${showTime ? " and Time" : ""}`;
 
   return (
-    <div
-      className={className}
-      role="dialog"
-      aria-label={ariaLabel}
-      aria-modal="true"
-    >
+    <div className={className} aria-label={ariaLabel}>
       {children}
     </div>
   );
