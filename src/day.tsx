@@ -155,6 +155,7 @@ export default class Day extends Component<DayProps> {
   dayEl = createRef<HTMLDivElement>();
 
   handleClick: DayProps["onClick"] = (event) => {
+    console.log("handleClick");
     if (!this.isDisabled() && this.props.onClick) {
       this.props.onClick(event);
     }
